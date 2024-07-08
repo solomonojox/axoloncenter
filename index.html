@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Axolon Center</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/nav-bar.css">
+  <link rel="stylesheet" href="/css/gototop.css">
+  <link rel="stylesheet" href="/css/animation.css">
+  <link rel="stylesheet" href="/css/mobile.css">
+
+  <!-- Animation -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+  <link
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!-- Swiper -->
+  <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+  <!-- Top head: Phone number 
+  <div class="top-contact">
+    <!-- phone 
+     <a href="tel:123-456-7890" target="_blank">Call us: 123-456-7890</a>
+     <!-- Instagram 
+     <a target="_blank" href="https://www.instagram.com/axoloncenter/"><i class="fab fa-instagram"></i>axoloncenter</a>
+   </div>
+  -->
+
+  <!-- Navigation -->
+  <header class="header">
+    <div class="container">
+      <div class="header-main">
+        <div class="logo">
+          <a href="index.html">Axolon Center</a>
+        </div>
+
+        <div class="open-nav-menu">
+          <span></span>
+        </div>
+
+        <div class="menu-overlay"></div>
+        <!-- Navigation starts -->
+        <nav class="nav-menu">
+          <div class="nav-close-container">
+            <div class="close-nav-menu">
+              <img src="images/close.png" alt="">
+            </div>
+            <a href="index.html"><img src="images/logo.png" alt="" class="inner-logo"></a>
+          </div>
+
+          <ul class="menu">
+            <li class="menu-item menu-item-has-children"><a href="index.html" class="nav_links">Home</a></li>
+            <li class="menu-item"><a href="servives.html" class="nav_links">Services</a></li>
+            <li class="menu-item"><a href="about.html" class="nav_links">About</a></li>
+            <li class="menu-item"><a href="#contactForm" class="nav_links">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- Navigation ends -->
+      </div>
+    </div>
+  </header>
+
+  <!-- Go to Top -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Hero image -->
+  <div class="hero-section animate__animated animate__fadeIn">
+    <div class="hero-text">
+      <h3>We are here for you</h3>
+      <h1>Environment for your most beautiful moments</h1>
+      <p>Our goal is to provide beautiful and convenient environmen to individuals and families and businesses.</p>
+    </div>
+    <img src="images/p4.jpg" alt="Hero image" class="hero-image">
+  </div>
+
+  <!-- Our services -->
+   <div class="services-wrapper">
+     <h2>Our Services</h2>
+     <div class="services">
+       <div class="service" data-aos="fade-up" data-aos-delay="100"> 
+         <img src="images/venue_2132657.png" alt="Service 1">
+         <h3>Event Hall Rental</h3>
+         <p>Our spacious hall is perfect for weddings, conferences, parties, and corporate events. Equipped with modern amenities to ensure your event runs smoothly.</p>
+       </div>
+       <div class="service" data-aos="fade-up" data-aos-delay="200">
+         <img src="images/podcast.png" alt="Service 2">
+         <h3>Podcast Studio Rental</h3>
+         <p>Fully-equipped podcast studio available for rent. Ideal for both new and experienced podcasters, featuring high-quality microphones and soundproofing.</p>
+       </div>
+       <div class="service" data-aos="fade-up" data-aos-delay="100">
+         <img src="images/photography.png" alt="Service 3">
+         <h3>Photo and Video Shoot Studio</h3>
+         <p>A versatile studio space for photo shoots and video productions. Complete with professional lighting, backdrops, and 360-degree photo booth options.</p>
+       </div>
+     </div>
+   </div>
+
+  <!-- Featured projects -->
+  <div class="projects">
+    <h2>Featured Projects</h2>
+    <div class="projects-wrapper">
+      <div class="project-images" data-aos="fade-up" data-aos-delay="100" data-aos-easing="ease-in-out" id="project-1">
+         <img src="images/p2.jpg" alt="Project 1">
+         <div class="content">
+           <h3>Wedding</h3>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos saepe deserunt sunt magni at ea eligendi. Nam quis cupiditate aperiam!</p>
+         </div>
+      </div>
+      <div class="project-images" data-aos="fade-up" data-aos-delay="100" data-aos-easing="ease-in-out" id="project-2">
+        <div class="content">
+          <h3>Podcast session</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quaerat veritatis ipsum voluptatum quasi tenetur, eum sapiente harum. Sed facere temporibus reprehenderit natus itaque? Eum reprehenderit, cumque atque accusamus, necessitatibus tempore illo modi at reiciendis optio numquam, et libero. Earum sapiente itaque suscipit optio neque consectetur facere omnis vel laboriosam.</p>
+        </div>
+         <img src="images/pod1.jpg" alt="Project 2">
+      </div>
+    </div>
+  </div>
+
+  <!-- Counter for events and bookings done -->
+  <div class="counter-wrapper">
+    <div class="counter-title">
+      <h2>BY THE NUMBERS</h2>
+      <p>GAIN CONFIDENCE JOINING OUR GLOBAL COMMUNITY</p>
+    </div>
+    <div class="counter">
+      <div class="count" data-aos="fade-up" data-aos-delay="50">
+        <p id="done">200+</p>
+        <p>Events Done</p>
+      </div>
+      <div class="count" data-aos="fade-up" data-aos-delay="100">
+        <p id="done">50+</p>
+        <p>Podcast Held</p>
+      </div>
+      <div class="count" data-aos="fade-up" data-aos-delay="200">
+        <p id="done">100+</p>
+        <p>Videoshoot Done</p>
+      </div>
+      <div class="count" data-aos="fade-up" data-aos-delay="300">
+        <p id="done">100+</p>
+        <p>Photoshoot Done</p>
+      </div>
+    </div>
+  </div>
+
+ <!-- Reviews -->
+ <div class="reviews" data-aos="fade-up" data-aos-delay="200">
+   <div class="review-title">
+     <h2>Reviews</h2>
+     <p>What our customers have to say about us:</p>
+   </div>
+    <!-- Slider main container -->
+   <div class="swiper mySwiper">
+     <div class="swiper-wrapper">
+       <div class="swiper-slide">
+         <div class="review">
+           <div class="review-wrapper">
+             <div class="comment">
+               <div class="img">
+                 <img src="images/solo.jpg" alt="">
+               </div>
+               <h2>Akpa Solomon</h2>
+               <p>I recently held a seminar at Axolon Center. The facility was excellent and impeccably clean. The staff were incredibly welcoming and helpful throughout the event. Highly recommended for any event needs!</p>
+             </div>
+           </div>
+         </div>
+       </div>
+       <div class="swiper-slide">
+         <div class="review">
+           <div class="review-wrapper">
+             <div class="comment">
+               <div class="img">
+                 <img src="images/p3.jpg" alt="">
+               </div>
+               <h2>John Doe</h2>
+               <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, rerum odio sit velit possimus ipsa, similique adipisci tempora, asperiores laudantium corrupti! Animi alias cupiditate reprehenderit sit iste!</p>
+             </div>
+           </div>
+         </div>
+       </div>
+       <div class="swiper-slide">
+         <div class="review">
+           <div class="review-wrapper">
+             <div class="comment">
+               <div class="img">
+                 <img src="images/p3.jpg" alt="">
+               </div>
+               <h2>John Doe</h2>
+               <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, rerum odio sit velit possimus ipsa, similique adipisci tempora, asperiores laudantium corrupti! Animi alias cupiditate reprehenderit sit iste!</p>
+             </div>
+           </div>
+         </div>
+       </div>
+       <div class="swiper-slide">
+         <div class="review">
+           <div class="review-wrapper">
+             <div class="comment">
+               <div class="img">
+                 <img src="images/p3.jpg" alt="">
+               </div>
+               <h2>John Doe</h2>
+               <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, rerum odio sit velit possimus ipsa, similique adipisci tempora, asperiores laudantium corrupti! Animi alias cupiditate reprehenderit sit iste!</p>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+
+     <div class="swiper-pagination"></div>
+   </div>
+ </div>
+
+ <!-- Gallery -->
+  <div class="photo-gallery">
+    <h2>Photo Gallery</h2>
+    <div class="gallery">
+      <img src="images/p1.jpg" alt="Photo 1" data-aos="fade-up" data-aos-delay="50">
+      <img src="images/p2.jpg" alt="Photo 2" data-aos="fade-up" data-aos-delay="100">
+      <img src="images/p3.jpg" alt="Photo 3" data-aos="fade-up" data-aos-delay="200">
+      <img src="images/p8.jpg" alt="Photo 4" data-aos="fade-up" data-aos-delay="100">
+      <img src="images/p5.jpg" alt="Photo 5" data-aos="fade-up" data-aos-delay="200">
+      <img src="images/p6.jpg" alt="Photo 6" data-aos="fade-up" data-aos-delay="300">
+    </div>
+  </div>
+
+  <div class="contact-form" id="contactForm">
+    <div class="contact-label" data-aos="fade-up" data-aos-delay="100">
+      <h2>GET A QUOTE</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, laboriosam! Quaerat quas sint reiciendis facilis, incidunt, ex a voluptatum praesentium nobis doloremque architecto repellendus, maxime dolorum animi tempora voluptate saepe iure ducimus odit quam voluptatibus nihil fugit eos ipsum? Ducimus earum maiores adipisci consectetur fuga hic sint nemo, possimus fugit.</p>
+    </div>
+    <form id="eventForm" onsubmit="return validateForm()" data-aos="fade-up" data-aos-delay="100">
+      <div>
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName">
+          <div id="firstNameError" class="error"></div>
+      </div>
+      <div>
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName">
+          <div id="lastNameError" class="error"></div>
+      </div>
+      <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+          <div id="emailError" class="error"></div>
+      </div>
+      <div>
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone">
+          <div id="phoneError" class="error"></div>
+      </div>
+      <div>
+          <label for="address">House Address:</label>
+          <input type="text" id="address" name="address">
+          <div id="addressError" class="error"></div>
+      </div>
+      <div class="eventType">
+          <label for="eventType">Event Type:</label>
+          <select id="eventType" name="eventType">
+              <option value="">Select</option>
+              <option value="birthday">Birthday</option>
+              <option value="wedding">Wedding</option>
+              <option value="corporate">Corporate</option>
+              <option value="worship">Worship</option>
+          </select>
+          <div id="eventTypeError" class="error"></div>
+      </div>
+      <div class="guestSize">
+          <label for="guestSize">Guest Size:</label>
+          <input type="number" id="guestSize" name="guestSize">
+          <div id="guestSizeError" class="error"></div>
+      </div>
+      <div class="eventDate">
+          <label for="eventDate">Event Date:</label>
+          <input type="date" id="eventDate" name="eventDate">
+          <div id="eventDateError" class="error"></div>
+      </div>
+      <div class="eventTime">
+          <label for="eventTime">Event Time:</label>
+          <input type="time" id="eventTime" name="eventTime">
+          <div id="eventTimeError" class="error"></div>
+      </div>
+      <div>
+          <button type="submit" id="submitBtn">Submit</button>
+        </div>
+        <button onclick="localStorage.clear('info')">Clear Storage</button>
+      </form>
+  </div>
+
+      <!-- Map -->
+      <div class="map" data-aos="fade-up" data-aos-delay="100">
+        <h2>Our Location</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.733569845662!2d3.405883173327665!3d6.428264924266154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8ac54ce25fa9%3A0x1d24ed5a492c9a3d!2s133%20Ahmadu%20Bello%20Wy%2C%20Victoria%20Island%2C%20Lagos%20106104%2C%20Lagos!5e0!3m2!1sen!2sng!4v1720279675849!5m2!1sen!2sng" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    
+      <!-- Footer -->
+      <footer>
+        <p>&copy; 2023 Axolon Center. All rights reserved.</p>
+      </footer>
+    
+      <!-- JavaScript -->
+      <script src="js/script.js"></script>
+      <script src="js/nav-bar.js"></script>
+      <script src="js/go-to-top.js"></script>
+      
+    
+      <!-- Swiper -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          loop: true,
+          // loop timer
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+  
+  <!-- Form -->
+  <script>
+    const customerDetail = JSON.parse(localStorage.getItem('info')) || [];
+    console.log(customerDetail)
+
+    const customerInfo = {
+      first_name: '',
+      last_name: '',
+      email: '',
+      phone: '',
+      address: '',
+      event_type: '',
+      guest_size: '',
+      event_date: '',
+      event_time: ''
+    }
+    function validateForm() {
+      let isValid = true;
+
+      // Clear previous errors
+      document.querySelectorAll('.error').forEach(error => error.textContent = '');
+
+      // Get form fields
+      const firstName = document.getElementById('firstName').value.trim();
+      const lastName = document.getElementById('lastName').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const address = document.getElementById('address').value.trim();
+      const eventType = document.getElementById('eventType').value;
+      const guestSize = document.getElementById('guestSize').value;
+      const eventDate = document.getElementById('eventDate').value;
+      const eventTime = document.getElementById('eventTime').value;
+
+      customerInfo.first_name += firstName
+      customerInfo.last_name += lastName
+      customerInfo.email += email
+      customerInfo.phone += phone
+      customerInfo.address += address
+      customerInfo.event_type += eventType
+      customerInfo.guest_size = guestSize
+      customerInfo.event_date = eventDate
+      customerInfo.event_time = eventTime
+
+      // console.log(customerInfo)
+
+      // Validate each field
+      if (firstName === '') {
+          document.getElementById('firstNameError').textContent = 'First name is required';
+          isValid = false;
+      }
+      if (lastName === '') {
+          document.getElementById('lastNameError').textContent = 'Last name is required';
+          isValid = false;
+      }
+      if (email === '') {
+          document.getElementById('emailError').textContent = 'Email is required';
+          isValid = false;
+      }
+      if (phone === '') {
+          document.getElementById('phoneError').textContent = 'Phone number is required';
+          isValid = false;
+      }
+      if (address === '') {
+          document.getElementById('addressError').textContent = 'House address is required';
+          isValid = false;
+      }
+      if (eventType === '') {
+          document.getElementById('eventTypeError').textContent = 'Event type is required';
+          isValid = false;
+      }
+      if (guestSize === '') {
+          document.getElementById('guestSizeError').textContent = 'Guest size is required';
+          isValid = false;
+      }
+      if (eventDate === '') {
+          document.getElementById('eventDateError').textContent = 'Event date is required';
+          isValid = false;
+      }
+      if (eventTime === '') {
+          document.getElementById('eventTimeError').textContent = 'Event time is required';
+          isValid = false;
+      }
+
+      if(isValid){
+        customerDetail.push(customerInfo)
+      }
+
+      localStorage.setItem('info', JSON.stringify(customerDetail))
+      return isValid;
+    }
+  </script>
+
+  <!-- Animation -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

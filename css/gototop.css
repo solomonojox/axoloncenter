@@ -1,0 +1,22 @@
+/* Goto top */
+#myBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+
+  display: none;
+
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 10%;
+  opacity: 80%;
+  cursor: pointer;
+  background-color: #009b9b;
+}
+
+#myBtn i{
+  font-size: 20px;
+  color: white;
+}
