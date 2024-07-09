@@ -59,6 +59,9 @@
   .review{
     width: 100%;
   }
+  .reviews .review-title{
+    margin: 20px;
+  }
 
   .gallery img{
     width: 100%;
