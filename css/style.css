@@ -284,7 +284,6 @@ form{
   background-color: #0cc9c9;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px 0 #ccc;
 }
 .guest-size{
   display: flex;
@@ -297,12 +296,12 @@ form{
 }
 #firstName, #email, #lastName, #phone, #address{ 
   width: 100%;
-  padding: 3px 0;
+  padding: 8px 0;
   border: none;
 }
 #eventType, #eventDate, #eventTime, #guestSize, #paymentMethod{
-  padding: 2px 0;
-  margin: 3px 0;
+  padding: 5px 0;
+  margin: 5px 0;
   border: none;
   /* width: 160px; */
   right: 0;
