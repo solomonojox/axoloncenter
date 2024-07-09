@@ -16,7 +16,7 @@ html{
   scroll-behavior: smooth;
 }
 
-/* Top contact 
+/* Top contact */
 .top-contact{
   display: flex;
   gap: 50px;
@@ -24,6 +24,7 @@ html{
   padding: 15px 30px;
   background-color: white;
   box-shadow: 0.1px 0px 1px;
+  position: relative;
 }
 .top-contact a{
   text-decoration: none;
@@ -36,7 +37,6 @@ html{
 .top-contact a:hover{
   color: #0cc9c9;
 }
-*/
 
 /* Hero section */
 .hero-section{
