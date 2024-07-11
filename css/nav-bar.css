@@ -247,9 +247,9 @@ a{
 @media(max-width: 991px){
   .header .nav-menu{
     position: fixed;
-    right: -280px;
+    right: -150px;
     visibility: hidden;
-    width: 280px;
+    width: 150px;
     height: 100%;
     top: 0;
     overflow-y: auto;
@@ -282,17 +282,6 @@ a{
     border-top: 1px solid #333;
   }
 
-  /* Remove */
-  .header .menu > .menu-item > a .plus:before,
-  .header .menu > .menu-item > a .plus:after{
-    background-color: var(--color-black);
-  }
-
-  /* Remove */
-  .header .menu > .menu-item-has-children.active > a .plus:after{
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-
   .header .menu > .menu-item > .sub-menu{
     width: 100%;
     position: relative;
@@ -307,13 +296,6 @@ a{
     top: auto;
     max-height: 0;
     overflow: hidden;
-  }
-
-  /* Remove */
-  .header .menu > .menu-item > .sub-menu > .menu-item > a{
-    padding: 12px 45px;
-    color: var(--color-black);
-    border-bottom: 1px solid var(--color-dark-grey);
   }
 
   .header .open-nav-menu, .header .close-nav-menu, .nav-close-container{
