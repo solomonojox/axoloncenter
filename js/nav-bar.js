@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   menuOverlay = document.querySelector('.menu-overlay'),
   mediaSize = 991;
   
-  openNavMenu.addEventListener('click', toggleNav);
+  openNavMenu.addEventListener('click', toggleNav); 
   closeNavMenu.addEventListener('click', toggleNav);
   // close the navMenu by clicking outside
   menuOverlay.addEventListener('click', toggleNav);
@@ -87,11 +87,11 @@ document.addEventListener("DOMContentLoaded", () => {
   //   }
   // });
 
-  navLinksElements.forEach(navLinksElements => {
-    const navlinkPathname = new URL(navLinksElements.href).pathname;
+  // navLinksElements.forEach(navLinksElements => {
+  //   const navlinkPathname = new URL(navLinksElements.href).pathname;
 
-    if ((activePage === navlinkPathname) || (activePage === '/index.html' && navlinkPathname === '/')) {
-      navLinksElements.classList.add('nav_active');
-    }
-  })
+  //   if ((activePage === navlinkPathname) || (activePage === '/index.html' && navlinkPathname === '/')) {
+  //     navLinksElements.classList.add('nav_active');
+  //   }
+  // })
 })

@@ -81,6 +81,9 @@
   form{
     width: 100%;
   }
+  .dateTime-wrap, .typeGuest{
+    flex-direction: column;
+  }
   .map{
     width: 100%;
   }

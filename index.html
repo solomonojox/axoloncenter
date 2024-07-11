@@ -57,7 +57,7 @@
             <li class="menu-item menu-item-has-children"><a href="#top" class="nav_links">Home</a></li> 
             <li class="menu-item"><a href="#services" class="nav_links">Services</a></li>
             <li class="menu-item"><a href="#projects" class="nav_links">Projects</a></li>
-            <li class="menu-item"><a href="#contactForm" class="nav_links">Contact</a></li>
+            <li class="menu-item get-quote"><a href="#contactForm" class="nav_links">Get a quote</a></li>
           </ul>
         </nav>
         <!-- Navigation ends -->
@@ -275,31 +275,37 @@
           <input type="text" id="address" name="address">
           <div id="addressError" class="error"></div>
       </div>
-      <div class="eventType">
-          <label for="eventType">Event Type:</label>
-          <select id="eventType" name="eventType">
-              <option value="">Select</option>
-              <option value="birthday">Birthday</option>
-              <option value="wedding">Wedding</option>
-              <option value="corporate">Corporate</option>
-              <option value="worship">Worship</option>
-          </select>
-          <div id="eventTypeError" class="error"></div>
-      </div>
-      <div class="guestSize">
+      <div class="typeGuest">
+        <div class="eventType">
+            <label for="eventType">Event Type:</label>
+            <select id="eventType" name="eventType">
+                <option value="">Select</option>
+                <option value="birthday">Birthday</option>
+                <option value="wedding">Wedding</option>
+                <option value="corporate">Corporate</option>
+                <option value="worship">Worship</option>
+                <option value="photoshoot">Photoshoot</option>
+                <option value="videoshoot">Videoshoot</option>
+            </select>
+            <div id="eventTypeError" class="error"></div>
+        </div>
+        <div class="guestSize">
           <label for="guestSize">Guest Size:</label>
           <input type="number" id="guestSize" name="guestSize">
           <div id="guestSizeError" class="error"></div>
+        </div>
       </div>
-      <div class="eventDate">
-          <label for="eventDate">Event Date:</label>
-          <input type="date" id="eventDate" name="eventDate">
-          <div id="eventDateError" class="error"></div>
-      </div>
-      <div class="eventTime">
-          <label for="eventTime">Event Time:</label>
-          <input type="time" id="eventTime" name="eventTime">
-          <div id="eventTimeError" class="error"></div>
+      <div class="dateTime-wrap">
+        <div class="eventDate">
+            <label for="eventDate">Event Date:</label>
+            <input type="date" id="eventDate" name="eventDate">
+            <div id="eventDateError" class="error"></div>
+        </div>
+        <div class="eventTime">
+            <label for="eventTime">Event Time:</label>
+            <input type="time" id="eventTime" name="eventTime">
+            <div id="eventTimeError" class="error"></div>
+        </div>
       </div>
       <div>
           <button type="submit" id="submitBtn">Submit</button>
@@ -427,19 +433,19 @@
           isValid = false;
       }
       if (eventType === '') {
-          document.getElementById('eventTypeError').textContent = 'Event type is required';
+          document.getElementById('eventTypeError').textContent = 'required';
           isValid = false;
       }
       if (guestSize === '') {
-          document.getElementById('guestSizeError').textContent = 'Guest size is required';
+          document.getElementById('guestSizeError').textContent = 'required';
           isValid = false;
       }
       if (eventDate === '') {
-          document.getElementById('eventDateError').textContent = 'Event date is required';
+          document.getElementById('eventDateError').textContent = 'required';
           isValid = false;
       }
       if (eventTime === '') {
-          document.getElementById('eventTimeError').textContent = 'Event time is required';
+          document.getElementById('eventTimeError').textContent = 'required';
           isValid = false;
       }
 

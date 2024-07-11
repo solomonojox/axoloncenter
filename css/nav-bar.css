@@ -60,7 +60,7 @@ a{
   padding: 8px 8px;
   font-size: 16px;
   color: var(--color-black);
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   font-weight: 600;
   transition: all 0.3s ease;
 }
@@ -319,4 +319,9 @@ a{
   .header .open-nav-menu, .header .close-nav-menu, .nav-close-container{
     display: flex;
   }
+}
+
+.get-quote{
+  background-color: #0cc9c9;
+  border-radius: 4px;
 }
