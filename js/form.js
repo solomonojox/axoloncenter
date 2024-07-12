@@ -30,7 +30,6 @@ submitBtn.addEventListener('click', function validateMyForm() {
   const guestSize = document.getElementById('guestSize').value;
   const eventDate = document.getElementById('eventDate').value;
   const eventTime = document.getElementById('eventTime').value;
-  // const successMsg = document.getElementById('successMsg');
 
   customerInfo.first_name += firstName
   customerInfo.last_name += lastName
