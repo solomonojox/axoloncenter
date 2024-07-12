@@ -2,7 +2,7 @@
 .contact-form{
   display: flex;
   gap: 50px;
-  justify-content: center;
+  /* justify-content: center; */
   margin: 150px 0;
   background-color: #fff5f9;
   padding: 120px;
@@ -10,16 +10,12 @@
 .contact-label{
   width: 400px;
 }
-.form{
-  width: 500px auto;
+.fill-form{
+  width: 500px;
   height: auto;
   background-color: #8fd3d3;
   padding: 20px;
   border-radius: 10px;
-}
-.guest-size{
-  display: flex;
-  gap: 10px;
 }
 .event-booking{
   display: flex;
@@ -63,10 +59,4 @@
 .error {
   color: red;
   font-size: 0.9em;
-}
-
-#successMsg{
-  color: green;
-  font-size: 12px;
-  background-color: white;
 }
