@@ -9,17 +9,26 @@
   <link rel="stylesheet" href="./css/gototop.css">
   <link rel="stylesheet" href="./css/animation.css">
   <link rel="stylesheet" href="./css/mobile.css">
+  <link rel="stylesheet" href="./css/form.css">
 
   <!-- Animation -->
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
-  <link
-    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <!-- Swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <!-- Swiper -->
-  <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+  <!-- Javascript files -->
+  <script src="./js/form.js" defer></script>
+  <script src="./js/nav-bar.js"></script>
+  <script src="./js/go-to-top.js" defer></script>
+  <script src="./js/swipper.js" defer></script>
+  <script src="./js/animations.js" defer></script>
 </head>
 <body>
   <!-- Top head: Phone number -->
@@ -66,7 +75,7 @@
   </header>
 
   <!-- Go to Top -->
-  <button onclick="topFunction()" id="myBtn" title="Go to top">
+  <button id="myBtn" title="Go to top">
     <i class="fa-solid fa-arrow-up"></i>
   </button>
 
@@ -249,7 +258,7 @@
       <h2>GET A QUOTE</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, laboriosam! Quaerat quas sint reiciendis facilis, incidunt, ex a voluptatum praesentium nobis doloremque architecto repellendus, maxime dolorum animi tempora voluptate saepe iure ducimus odit quam voluptatibus nihil fugit eos ipsum? Ducimus earum maiores adipisci consectetur fuga hic sint nemo, possimus fugit.</p>
     </div>
-    <form id="eventForm" onsubmit="return validateForm()" data-aos="fade-up" data-aos-delay="100">
+    <div id="eventForm" data-aos="fade-up" data-aos-delay="100" class="form">
       <div>
           <label for="firstName">First Name:</label>
           <input type="text" id="firstName" name="firstName">
@@ -308,10 +317,11 @@
         </div>
       </div>
       <div>
-          <button type="submit" id="submitBtn">Submit</button>
-        </div>
-        <button onclick="localStorage.clear('info')">Clear Storage</button>
-      </form>
+        <button id="submitBtn" class="submitBtn">Submit</button>
+      </div>
+      <button id="clearBtn">Clear Storage</button>
+      <!-- <div id="successMsg"></div> -->
+    </div>
   </div>
 
   <!-- Map -->
@@ -320,148 +330,25 @@
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.733569845662!2d3.405883173327665!3d6.428264924266154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8ac54ce25fa9%3A0x1d24ed5a492c9a3d!2s133%20Ahmadu%20Bello%20Wy%2C%20Victoria%20Island%2C%20Lagos%20106104%2C%20Lagos!5e0!3m2!1sen!2sng!4v1720279675849!5m2!1sen!2sng" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
     
-      <!-- Footer -->
-      <footer>
-        <p>&copy; 2023 Axolon Center. All rights reserved.</p>
-      </footer>
-    
-      <!-- JavaScript -->
-      <script src="js/script.js"></script>
-      <script src="js/nav-bar.js"></script>
-      <script src="js/go-to-top.js"></script>
-      
-    
-      <!-- Swiper -->
-      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    
-      <!-- Initialize Swiper -->
-      <script>
-        var swiper = new Swiper(".mySwiper", {
-          spaceBetween: 30,
-          centeredSlides: true,
-          loop: true,
-          // loop timer
-          autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-          },
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          breakpoints: {
-            0: {
-                slidesPerView: 1,
-                slidesPerGroup: 1,
-            },
-            991: {
-                slidesPerView: 3,
-                slidesPerGroup: 1,
-            },
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-        });
-      </script>
-  
-  <!-- Form -->
-  <script>
-    const customerDetail = JSON.parse(localStorage.getItem('info')) || [];
-    console.log(customerDetail)
+  <!-- Footer -->
+  <footer>
+    <!-- social media icons -->
+     <div class="footer-icons">
+       <span class="line"></span><a href="https://www.instagram.com/axoloncenter/"><i class="fab fa-instagram"></i></a>
+       <a href="https://www.facebook.com/axoloncenter"><i class="fab fa-facebook"></i></a>
+       <a href="https://www.facebook.com/axoloncenter"><i class="fab fa-whatsapp"></i></a><span class="line"></span>
+     </div>
 
-    const customerInfo = {
-      first_name: '',
-      last_name: '',
-      email: '',
-      phone: '',
-      address: '',
-      event_type: '',
-      guest_size: '',
-      event_date: '',
-      event_time: ''
-    }
-    function validateForm() {
-      let isValid = true;
-
-      // Clear previous errors
-      document.querySelectorAll('.error').forEach(error => error.textContent = '');
-
-      // Get form fields
-      const firstName = document.getElementById('firstName').value.trim();
-      const lastName = document.getElementById('lastName').value.trim();
-      const email = document.getElementById('email').value.trim();
-      const phone = document.getElementById('phone').value.trim();
-      const address = document.getElementById('address').value.trim();
-      const eventType = document.getElementById('eventType').value;
-      const guestSize = document.getElementById('guestSize').value;
-      const eventDate = document.getElementById('eventDate').value;
-      const eventTime = document.getElementById('eventTime').value;
-
-      customerInfo.first_name += firstName
-      customerInfo.last_name += lastName
-      customerInfo.email += email
-      customerInfo.phone += phone
-      customerInfo.address += address
-      customerInfo.event_type += eventType
-      customerInfo.guest_size = guestSize
-      customerInfo.event_date = eventDate
-      customerInfo.event_time = eventTime
-
-      // console.log(customerInfo)
-
-      // Validate each field
-      if (firstName === '') {
-          document.getElementById('firstNameError').textContent = 'First name is required';
-          isValid = false;
-      }
-      if (lastName === '') {
-          document.getElementById('lastNameError').textContent = 'Last name is required';
-          isValid = false;
-      }
-      if (email === '') {
-          document.getElementById('emailError').textContent = 'Email is required';
-          isValid = false;
-      }
-      if (phone === '') {
-          document.getElementById('phoneError').textContent = 'Phone number is required';
-          isValid = false;
-      }
-      if (address === '') {
-          document.getElementById('addressError').textContent = 'House address is required';
-          isValid = false;
-      }
-      if (eventType === '') {
-          document.getElementById('eventTypeError').textContent = 'required';
-          isValid = false;
-      }
-      if (guestSize === '') {
-          document.getElementById('guestSizeError').textContent = 'required';
-          isValid = false;
-      }
-      if (eventDate === '') {
-          document.getElementById('eventDateError').textContent = 'required';
-          isValid = false;
-      }
-      if (eventTime === '') {
-          document.getElementById('eventTimeError').textContent = 'required';
-          isValid = false;
-      }
-
-      if(isValid){
-        customerDetail.push(customerInfo)
-      }
-
-      localStorage.setItem('info', JSON.stringify(customerDetail))
-      return isValid;
-    }
-  </script>
-
-  <!-- Animation -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+    <!-- Copyright -->
+    <h3>Axolon Center</h3>
+    <p>Copyright &copy; 2024. All rights reserved.</p>
+    <!-- links -->
+     <div class="footerlinks">
+       <a href="#home" id="bar">Home</a>
+       <a href="#services" id="bar">Services</a>
+       <a href="#projects" id="bar">Projects</a>
+       <a href="#contact">Contact</a>
+     </div>
+  </footer>
 </body>
 </html>

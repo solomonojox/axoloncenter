@@ -81,7 +81,7 @@
   .contact-label{
     width: 100%;
   }
-  form{
+  .form{
     width: 100%;
   }
   .dateTime-wrap, .typeGuest{
@@ -89,5 +89,24 @@
   }
   .map{
     width: 100%;
+  }
+
+  /* footer */
+  footer{
+    padding: 30px 0;
+  }
+  .footer-icons{
+    gap: 20px;
+  }
+  .line{
+    width: 50px;
+  }
+  .footerlinks{
+    flex-direction: column;
+    gap: 15px;
+  }
+  #bar{
+    border: 0;
+    padding: 0;
   }
 }
