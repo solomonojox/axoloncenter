@@ -28,8 +28,6 @@ a{
 
 .header-main{
   height: 80px;
-  /* background-color: rgba(255, 255, 255, 0.1); */
-  /* box-shadow: 0.1px 0px 5px; */
   box-shadow: 1px 1px 2px 0 #cecdcd;
   display: flex;
   justify-content: space-between;
@@ -37,14 +35,14 @@ a{
   padding: 0 5%;
 }
 
-.header .logo a{
+/* .header .logo a{
   font-size: 25px;
-  /* font-family: "Courgette", cursive;
-  font-optical-sizing: auto;
-  font-style: italic; */
   color: var(--color-black);
   font-weight: 600;
-}
+} */
+ .header .logo img{
+  width: 120px;
+ }
 
 .header .nav-menu{
   padding: 0 15px;
@@ -61,7 +59,6 @@ a{
   padding: 8px 8px;
   font-size: 16px;
   color: var(--color-black);
-  /* text-transform: capitalize; */
   font-weight: 600;
   transition: all 0.3s ease;
 }
