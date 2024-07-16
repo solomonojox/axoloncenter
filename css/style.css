@@ -66,6 +66,22 @@ html{
   width: 40%;
   height: auto;
 }
+.hero-button{
+  padding: 15px;
+  border: none;
+  margin: 20px 0 0 150px;
+}
+.hero-button a{
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.hero-button:hover{
+  background-color: #5de6e6;
+}
 
 /* Services */
 .services-wrapper{

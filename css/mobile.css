@@ -19,6 +19,9 @@
     width: 100%;
     margin: 0;
   }
+  .hero-button{
+    margin: 20px 0 0;
+  }
   .hero-section img{
     width: 100%;
   }
