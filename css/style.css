@@ -23,14 +23,14 @@ html{
   gap: 50px;
   align-items: center;
   padding: 15px 30px;
-  background-color: white;
+  background-color: var(--color-secondary);
   box-shadow: 0.1px 0px 1px;
   position: relative;
 }
 .top-contact a{
   text-decoration: none;
   font-size: 14px;
-  color: #303737;
+  color: white;
   display: flex;
   align-items: center;
   gap: 10px;
