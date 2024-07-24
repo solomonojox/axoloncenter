@@ -34,6 +34,7 @@
     gap: 20px;
   }
   .projects .project-images{
+    /* flex-direction: column-reverse; */
     gap: 10px;
   }
   #project-2{
@@ -73,7 +74,6 @@
     height: auto;
   }
 
-  /* Form */
   .contact-form{
     flex-direction: column;
     align-items: center;
@@ -81,11 +81,15 @@
     padding: 100px 20px;
     margin: 50px 0;
   }
-  .container{
+  .contact-label{
     width: 100%;
   }
-
-  /* Map */
+  .fill-form{
+    width: 100%;
+  }
+  .dateTime-wrap, .typeGuest{
+    flex-direction: column;
+  }
   .map{
     width: 100%;
   }
@@ -100,9 +104,6 @@
     gap: 20px;
     justify-content: flex-start;
   }
-  .line{
-    width: 50px;
-  }
   .footerlinks{
     flex-direction: column;
     gap: 0px;
@@ -110,7 +111,7 @@
     margin: 0;
   }
   .copyright{
-    margin: 0px;
+    margin: 20px 0;
     padding-top: 15px;
     border-top: 1px solid white;
   }

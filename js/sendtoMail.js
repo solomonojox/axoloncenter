@@ -10,6 +10,6 @@ function sendEmail() {
     Subject : "New Contact Form Enquiry",
     Body : "Name: " + document.getElementById("fullName").value + "<br> Email: " + document.getElementById("email").value + "<br> Phone: " + document.getElementById("phone").value + "<br> Address: " + document.getElementById("address").value + "<br> Event Type: " + document.getElementById("eventType").value + "<br> Guest size: " + document.getElementById("guestSize").value + "<br> Event Date: " + document.getElementById("eventDate").value + "<br> Event Time: " + document.getElementById("eventTime").value
   }).then(
-    message => alert('Your message has been sent!')
+    message => alert('Your message has been sent')
   );
 }
