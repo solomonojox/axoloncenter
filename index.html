@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="./css/animation.css">
   <link rel="stylesheet" href="./css/form.css">
   <link rel="stylesheet" href="./css/mobile.css">
+  <link rel="stylesheet" href="./css/newForm.css">
 
   <!-- Animation -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -24,7 +25,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
   <!-- Javascript files -->
-  <script src="./js/form.js" defer></script>
+  <!-- <script src="./js/form.js" defer></script> -->
+  <script src="./js/sendtoMail.js" defer></script>
   <script src="./js/nav-bar.js"></script>
   <script src="./js/go-to-top.js" defer></script>
   <script src="./js/swipper.js" defer></script>
@@ -228,7 +230,7 @@
            <div class="review-wrapper">
              <div class="comment">
                <div class="img">
-                 <img src="images/p4.jpg" alt="">
+                 <img src="images/p3.jpg" alt="">
                </div>
                <h2>John Doe</h2>
                <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, rerum odio sit velit possimus ipsa, similique adipisci tempora, asperiores laudantium corrupti! Animi alias cupiditate reprehenderit sit iste!</p>
@@ -251,7 +253,6 @@
       <img src="images/p3.jpg" alt="Photo 3" data-aos="fade-up" data-aos-delay="200">
       <img src="images/p8.jpg" alt="Photo 4" data-aos="fade-up" data-aos-delay="100">
       <img src="images/p5.jpg" alt="Photo 5" data-aos="fade-up" data-aos-delay="200">
-      <img src="images/p6.jpg" alt="Photo 6" data-aos="fade-up" data-aos-delay="300">
       <img src="images/p11.jpg" alt="Photo 6" data-aos="fade-up" data-aos-delay="300">
     </div>
   </div>
@@ -260,39 +261,34 @@
   <div class="contact-form" id="contactForm">
     <div class="contact-label" data-aos="fade-up" data-aos-delay="100">
       <h2>GET A QUOTE</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, laboriosam! Quaerat quas sint reiciendis facilis, incidunt, ex a voluptatum praesentium nobis doloremque architecto repellendus, maxime dolorum animi tempora voluptate saepe iure ducimus odit quam voluptatibus nihil fugit eos ipsum? Ducimus earum maiores adipisci consectetur fuga hic sint nemo, possimus fugit.</p>
+      <p>Our prices are flexible and affordable. Ready to transform your vision into reality? Get your free quote today!</p>
     </div>
     <div id="eventForm" data-aos="fade-up" data-aos-delay="100" class="fill-form">
       <div>
-          <label for="firstName">First Name:</label>
-          <input type="text" id="firstName" name="firstName">
-          <div id="firstNameError" class="error"></div>
-      </div>
-      <div>
-          <label for="lastName">Last Name:</label>
-          <input type="text" id="lastName" name="lastName">
-          <div id="lastNameError" class="error"></div>
+          <label for="fullName">Full Name:</label>
+          <input type="text" id="fullName" name="fullName" placeholder="Enter your full name">
+          <div id="fullNameError" class="error"></div>
       </div>
       <div>
           <label for="email">Email:</label>
-          <input type="email" id="email" name="email">
+          <input type="email" id="email" name="email" placeholder="Enter your email">
           <div id="emailError" class="error"></div>
       </div>
       <div>
           <label for="phone">Phone Number:</label>
-          <input type="tel" id="phone" name="phone">
+          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
           <div id="phoneError" class="error"></div>
       </div>
       <div>
           <label for="address">House Address:</label>
-          <input type="text" id="address" name="address">
+          <input type="text" id="address" name="address" placeholder="Enter your address">
           <div id="addressError" class="error"></div>
       </div>
       <div class="typeGuest">
         <div class="eventType">
             <label for="eventType">Event Type:</label>
             <select id="eventType" name="eventType">
-                <option value="">Select</option>
+                <option value="">Select event type</option>
                 <option value="birthday">Birthday</option>
                 <option value="wedding">Wedding</option>
                 <option value="corporate">Corporate</option>
@@ -304,7 +300,7 @@
         </div>
         <div class="guestSize">
           <label for="guestSize">Guest Size:</label>
-          <input type="number" id="guestSize" name="guestSize">
+          <input type="number" id="guestSize" name="guestSize" placeholder="Enter number of guests">
           <div id="guestSizeError" class="error"></div>
         </div>
       </div>
@@ -321,9 +317,8 @@
         </div>
       </div>
       <div>
-        <button id="submitBtn" class="submitBtn">Submit</button>
+        <button id="submitBtn" class="submitBtn" onclick="sendEmail()">Submit</button>
       </div>
-      <button id="clearBtn">Clear Storage</button>
       <!-- <div id="successMsg"></div> -->
     </div>
   </div>
@@ -344,15 +339,23 @@
      </div>
 
     <!-- Copyright -->
-    <h3>Axolon Center</h3>
-    <p>Copyright &copy; 2024. All rights reserved.</p>
+    <img class="footer-logo" src="./images/logo.jpg" alt="">
     <!-- links -->
-     <div class="footerlinks">
-       <a href="#home" id="bar">Home</a>
-       <a href="#services" id="bar">Services</a>
-       <a href="#projects" id="bar">Projects</a>
-       <a href="#contact">Contact</a>
-     </div>
+    <div class="footerlinks">
+      <a href="#home" id="bar">Home</a>
+      <a href="#services" id="bar">Services</a>
+      <a href="#projects" id="bar">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <p class="copyright">Copyright &copy; 2024. All rights reserved.</p>
   </footer>
+
+  <script src="https://smtpjs.com/v3/smtp.js">
+  </script>
+
+  <!-- <script>
+    
+  </script> -->
 </body>
 </html>
