@@ -38,7 +38,6 @@
 .eventType, .eventDate, .eventTime, .guestSize, .paymentMethod{
   display: flex;
   align-items: center;
-  gap: 10px;
 }
 #eventTime{
   width: 100px;

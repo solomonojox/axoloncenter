@@ -44,7 +44,7 @@ submitBtn.addEventListener('click', function validateMyForm(e) {
 
     // Validate each field
     if (fullName === '') {
-        document.getElementById('firstNameError').textContent = 'First name is required';
+        document.getElementById('fullNameError').textContent = 'First name is required';
         isValid = false;
     }
     if (email === '') {

@@ -269,53 +269,65 @@
           <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" >
           <div id="fullNameError" class="error"></div>
       </div>
+
       <div>
           <label for="email">Email:</label>
           <input type="email" id="email" name="email" placeholder="Enter your email">
           <div id="emailError" class="error"></div>
       </div>
+
       <div>
           <label for="phone">Phone Number:</label>
           <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
           <div id="phoneError" class="error"></div>
       </div>
+
       <div>
           <label for="address">House Address:</label>
           <input type="text" id="address" name="address" placeholder="Enter your address">
           <div id="addressError" class="error"></div>
       </div>
-      <div class="typeGuest">
-        <div class="eventType">
-            <label for="eventType">Event Type:</label>
-            <select id="eventType" name="eventType">
-                <option value="">Select event type</option>
-                <option value="birthday">Birthday</option>
-                <option value="wedding">Wedding</option>
-                <option value="corporate">Corporate</option>
-                <option value="worship">Worship</option>
-                <option value="photoshoot">Photoshoot</option>
-                <option value="videoshoot">Videoshoot</option>
-            </select>
-            <div id="eventTypeError" class="error"></div>
+
+      <div class="eventType">
+        <div class="inputWrap">
+          <label for="eventType">Event Type:</label>
+          <select id="eventType" name="eventType">
+              <option value="">Select event type</option>
+              <option value="birthday">Birthday</option>
+              <option value="wedding">Wedding</option>
+              <option value="corporate">Corporate</option>
+              <option value="worship">Worship</option>
+              <option value="photoshoot">Photoshoot</option>
+              <option value="videoshoot">Videoshoot</option>
+          </select>
         </div>
-        <div class="guestSize">
+        <div id="eventTypeError" class="error"></div>
+      </div>
+
+      <div class="guestSize">
+        <div class="inputWrap">
           <label for="guestSize">Guest Size:</label>
           <input type="number" id="guestSize" name="guestSize" placeholder="Enter number of guests">
-          <div id="guestSizeError" class="error"></div>
         </div>
+        <div id="guestSizeError" class="error"></div>
       </div>
-      <div class="dateTime-wrap">
-        <div class="eventDate">
-            <label for="eventDate">Event Date:</label>
-            <input type="date" id="eventDate" name="eventDate">
-            <div id="eventDateError" class="error"></div>
+      
+      <div class="eventDate">
+        <div class="inputWrap">
+          <label for="eventDate">Event Date:</label>
+          <input type="date" id="eventDate" name="eventDate">
         </div>
-        <div class="eventTime">
-            <label for="eventTime">Event Time:</label>
-            <input type="time" id="eventTime" name="eventTime">
-            <div id="eventTimeError" class="error"></div>
-        </div>
+          <div id="eventDateError" class="error"></div>
       </div>
+
+      <div class="eventTime">
+        <div class="inputWrap">
+          <label for="eventTime">Event Time:</label>
+          <input type="time" id="eventTime" name="eventTime">
+        </div>
+          <div id="eventTimeError" class="error"></div>
+      </div>
+      
       <div>
         <button id="submitBtn" class="submitBtn">Submit</button>
       </div>
