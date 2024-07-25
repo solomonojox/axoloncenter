@@ -124,8 +124,8 @@ submitBtn.addEventListener('click', function validateMyForm(e) {
   }
 
   // Close Pop up
-  let close = document.getElementById("close-popup")
-  close.addEventListener("click", closePopup)
+  // let close = document.getElementById("close-popup")
+  // close.addEventListener("click", closePopup)
   function closePopup() {
     popup.classList.remove("open-popup")
   }
