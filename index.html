@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="./css/animation.css">
   <link rel="stylesheet" href="./css/form.css">
   <link rel="stylesheet" href="./css/mobile.css">
-  <link rel="stylesheet" href="./css/newForm.css">
+  <link rel="stylesheet" href="./css/popup.css">
 
   <!-- Animation -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -33,6 +33,16 @@
   <script src="./js/animations.js" defer></script>
 </head>
 <body>
+  <!-- Customized popup -->
+  <div id="popup">
+    <div class="popup-content">
+      <i class="fas fa-check-circle"></i>
+      <h1>Thank you!</h1>
+      <p>Your message has been sent. We will respond to you as soon as possible.</p>
+      <button id="close-popup">Close</button>
+    </div>
+  </div>
+
   <!-- Top head: Phone number -->
   <div class="top-contact" id="top">
     <!-- phone -->
@@ -327,7 +337,7 @@
         </div>
           <div id="eventTimeError" class="error"></div>
       </div>
-      
+
       <div>
         <button id="submitBtn" class="submitBtn">Submit</button>
       </div>
