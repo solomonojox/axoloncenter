@@ -1,4 +1,9 @@
 @media(max-width: 991px){
+  .top-contact{
+    gap: 20px;
+    padding: 15px 10px;
+  }
+
   .header .logo a{
     font-size: 20px;
   }

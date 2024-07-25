@@ -32,14 +32,14 @@ p{
 }
 .top-contact a{
   text-decoration: none;
-  font-size: 14px;
+  font-size: 15px;
   color: white;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
 }
 .top-contact a:hover{
-  color: #0cc9c9;
+  color: var(--hover-color);
 }
 
 /* Hero section */
@@ -315,6 +315,9 @@ footer{
   color: var(--color-secondary);
   cursor: pointer;
 }
+.footer-icons i:hover{
+  color: var(--hover-color);
+}
 
 footer h3{
   font-size: 40px;
@@ -334,7 +337,7 @@ footer p{
   color: #fff;
 }
 .footerlinks a:hover{
-  color: var(--color-secondary);
+  color: var(--hover-color);
 }
 .footer-logo{
   width: 200px;
