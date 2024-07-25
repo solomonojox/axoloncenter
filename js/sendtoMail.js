@@ -117,7 +117,7 @@ submitBtn.addEventListener('click', function validateMyForm(e) {
 
   // Open Pop up
   let popup = document.querySelector(".popup-content")
-  let open = document.getElementById("open-popup")
+  let open = document.getElementById("open-button")
   open.addEventListener("click", openPopup)
   function openPopup() {
     popup.classList.add("open-popup")

@@ -1,6 +1,6 @@
 .popup-content{
   box-shadow: 0 0 10px 0 #ccc;
-  width: 50%;
+  width: 280px; 
   background-color: #fff;
   border-radius: 10px;
   position: fixed;
