@@ -1,10 +1,16 @@
 /* Form */
 .contact-form{
   display: flex;
+  align-content: center;
+  justify-content: center;
   gap: 50px;
   margin: 150px 0;
   background-color: #fff5f9;
   padding: 120px;
+}
+.innerform-wrapper{
+  display: flex;
+  gap: 20px;
 }
 .contact-label{
   width: 400px;

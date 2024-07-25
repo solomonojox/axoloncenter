@@ -86,6 +86,9 @@
     padding: 100px 20px;
     margin: 50px 0;
   }
+  .innerform-wrapper{
+    flex-direction: column;
+  }
   .contact-label{
     width: 100%;
   }
