@@ -12,6 +12,19 @@ const customerInfo = {
   event_time: ''
 }
 
+// Show others input field if selected
+// let choseEventType = document.getElementById('eventType');
+// let otherInput = document.getElementById("otherInput");
+
+// choseEventType.addEventListener('change', function(){
+//   if(choseEventType.value === 'others'){
+//     otherInput.style.display = 'block';
+//   } else {
+//     otherInput.style.display = 'none';
+//   }
+// })
+
+// Validate form
 const submitBtn = document.querySelector('.submitBtn');
 
 submitBtn.addEventListener('click', function validateMyForm(e) {
@@ -108,6 +121,7 @@ submitBtn.addEventListener('click', function validateMyForm(e) {
     To : 'solomonakpas@gmail.com',
     From : "solomonakpas@gmail.com",
     Subject : "New Contact Form Enquiry",
+    others : document.getElementById("otherInput").value,
     Body : "Name: " + document.getElementById("fullName").value + "<br> Email: " + document.getElementById("email").value + "<br> Phone: " + document.getElementById("phone").value + "<br> Address: " + document.getElementById("address").value + "<br> Event Type: " + document.getElementById("eventType").value + "<br> Guest size: " + document.getElementById("guestSize").value + "<br> Event Date: " + document.getElementById("eventDate").value + "<br> Event Time: " + document.getElementById("eventTime").value
     })
     // .then(

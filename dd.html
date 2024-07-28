@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Input Field on Selection</title>
+    <style>
+        #otherInput {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="options">Choose an option:</label>
+        <select id="options" name="options" onchange="showInputField()">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="others">Others</option>
+        </select>
+        <div id="otherInput">
+            <label for="other">Please specify:</label>
+            <input type="text" id="other" name="other">
+        </div>
+    </form>
+
+    <script>
+        function showInputField() {
+            var selectBox = document.getElementById("options");
+            var otherInput = document.getElementById("otherInput");
+            if (selectBox.value === "others") {
+                otherInput.style.display = "block";
+            } else {
+                otherInput.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
